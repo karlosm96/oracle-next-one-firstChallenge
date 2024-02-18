@@ -1,4 +1,6 @@
 window.addEventListener('load', ()=>{
+    const key = 'Oracle-Alura-latam-2024'
+
     function getTagValue(tag){
         return document.querySelector(tag).value;
     }
@@ -26,21 +28,24 @@ window.addEventListener('load', ()=>{
     // Encrypted button
     const buttonEncrypt = document.querySelector('#encriptar');
     buttonEncrypt.addEventListener('click', () =>{
-        const msg = encryptMsg(getTagValue('#input-text').toUpperCase(), 'casa nueva');
-
-        // Hidde the ouput image ('non message was found...)
-        document.querySelector('.output-div').classList.add('hidden');
-        // Print the encrypted msg
-        document.querySelector('#output-label').innerHTML = msg;
+        const newMsg = getTagValue('#input-text').toUpperCase();
+        if(newMsg != ""){
+            const msg = encryptMsg(newMsg, key);
+            // Hidde the ouput image ('non message was found...)
+            document.querySelector('.output-div').classList.add('hidden');
+            // Print the encrypted msg
+            document.querySelector('#output-label').innerHTML = msg;
+        }
     })
 
     // Decrypted button
     const buttonDecrypted = document.querySelector('#desencriptar');
     buttonDecrypted.addEventListener('click', () =>{
-        const decMsg = decryptMsg(document.querySelector('#output-label').innerText, 'casa nueva');
+        const decMsg = decryptMsg(document.querySelector('#output-label').innerText, key);
 
         // Print the encrypted msg
         document.querySelector('#output-label').innerHTML = decMsg;
+        
     })
 
     // Copy button
