@@ -10,4 +10,4 @@ El objetivo principal es proporcionar a los usuarios una herramienta intuitiva y
 - JavaScript
 
 ## URL:
-- 
+- https://karlosm96.github.io/oracle-next-one-firstChallenge/
