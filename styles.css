@@ -137,6 +137,7 @@ button{
     width: 300px;
     max-height: 50px;
     border-color: #18426C;
+    cursor: pointer;
 }
 
 #encriptar{
