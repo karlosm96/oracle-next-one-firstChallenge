@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="./app.js" ></script>
+
+    <title>Encriptado Proyecto</title>
+</head>
+<body>
+    <div>
+        <img  id="alura-img" src="img/alura-removebg-preview.png" alt="">
+    </div>
+
+    <section>
+        <div class="input-div">
+            <input id="input-text" type="text" placeholder="ingrese texto aqui">
+        </div>
+
+        <div class="foot-div">
+            <div class="warning-div">
+                <i class="fa fa-exclamation-circle"></i>
+                <label id="warning-label">Solo letras mayusculas y sin acentos</label>
+            </div>
+            <div class="buttons-div">   
+                <button id="encriptar">Encriptar!</button>
+                <button id="desencriptar">Desenciptar!</button>
+            </div>
+        </div>
+    </section>
+
+    <aside>
+        <div class="output-label-div"
+            <label id="output-label"></label>
+        </div>
+        
+        <div class="output-div">
+            <img id="output-img" src="./img//Muñeco.png" alt="">
+            <h1>Ningun mensaje fue encontrado</h1>
+            <p id="output-p" >Ingrese el texto que desea encriptar o desencriptar</p>
+        </div>
+        <div class="encriptar-button-div">
+            <button id="copiar">Copiar</button>
+        </div>
+    </aside>
+</body>
+</html>
